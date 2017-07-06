@@ -9,7 +9,7 @@ class App extends Component {
     for (let i = 1; i <= 186; ++i) {
       const src = `http://stars.fe-artisan.com/images/avatar-${i}.jpg`;
       avatars.push(
-        <a href={`http://stars.fe-artisan.com/api/${i}`}>
+        <a key={i} href={`http://stars.fe-artisan.com/api/${i}`}>
           <Avatar shape="square" size="large" src={src} />
         </a>)
     }
