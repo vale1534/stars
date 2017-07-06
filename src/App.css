@@ -1,0 +1,23 @@
+.App {
+  max-width: 920px;
+  margin: 20px auto;
+}
+
+.App .ant-card {
+  margin-bottom: 8px;
+}
+
+.App .ant-card-body .ant-avatar {
+  margin: 4px;
+}
+
+.App .avatars-list .ant-card-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.App .avatars-list .ant-card-body:after {
+  content: "";
+  flex: auto;
+}
