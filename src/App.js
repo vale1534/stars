@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Card, Row, Col, Avatar, Timeline, Icon } from 'antd';
-import Highlight from './3rd-party/react-highlight';
+// import Highlight from './3rd-party/react-highlight';
 import './App.css';
 
 class App extends Component {
@@ -31,7 +31,7 @@ class App extends Component {
           <Col xs={24} sm={12}>
             <Card style={{ minHeight: 300 }}>
               <h3 style={{ marginBottom: 16 }}>数据示例</h3>
-              <Highlight className='json'>
+              <pre><code>
                 {`{
   "avatar": "http://stars.fe-artisan.com/images/avatar-1.jpg",
   "name": "马可",
@@ -43,7 +43,7 @@ class App extends Component {
   "img2": "http://stars.fe-artisan.com/images/img2-1.jpg",
   "id": 1
 }`}
-              </Highlight>
+              </code></pre>
             </Card>
           </Col>
           <Col xs={24} sm={24}>
